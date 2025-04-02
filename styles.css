@@ -1,0 +1,76 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    padding: 20px;
+}
+
+header a {
+    background-color: red;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+
+}
+header a:hover {
+    background-color: aliceblue;
+    color: black;
+}
+header .logo a {
+    background-image: url("./Images/logo.png");
+    background-size: 104px;
+    background-repeat: no-repeat ;
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    text-indent: -9999px;
+    width: 84px;
+    height: 37px;
+}
+
+header .navBar {
+    display: flex;
+}
+
+header ul .button {
+    /* text-align: center; */
+    justify-content: center;
+    display: flex;
+    flex: 1;
+
+}
+
+section {
+    background-color: burlywood;
+    padding: 20px;
+    display: flex;
+
+
+}
+div {
+    background-color: blue;
+    width: 100px;
+    margin: auto;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
