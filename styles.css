@@ -21,6 +21,7 @@ header a:hover {
     background-color: aliceblue;
     color: black;
 }
+
 header .logo a {
     background-image: url("./Images/logo.png");
     background-size: 104px;
@@ -34,36 +35,38 @@ header .logo a {
 }
 
 header .navBar {
-    display: flex;
+    display: inline-flex;
 }
 
-header ul .button {
-    justify-content: center;
-    display: flex;
-    flex: 1;
-
+header .hero {
+    display: grid;
+    margin: 0;
+    padding: 0;
 }
 
-header h1 {
+header .heroHeading {
     text-align: center;
+    justify-self: center;
+}
+
+header .subHeading {
     width: 500px;
-}
-
-header h4 {
     text-align: center;
+    justify-self: center;
 }
 
-header div {
-    background-image: url(./Images/pictureOfHeroSection.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat ;
-    justify-content: center;
-    display: flex;
-    flex: 1;
-    text-indent: -9999px;
-    height: 363px;
+header figure {
+    display: grid;
+    margin: 0;
+    padding: 0;
 }
+
+header .heroImage img {
+    height: 363px;
+    width: auto;
+    justify-self: center;
+}
+
 section {
     background-color: burlywood;
     padding: 20px;
