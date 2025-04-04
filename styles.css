@@ -3,9 +3,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* HEADER */
 header {
     background-color: black;
-    height: 616px;
+    height: 550px;
     padding: 20px;
 }
 
@@ -29,30 +31,39 @@ header .logo a {
     display: inline-block;
     height: 37px;
     position: relative;
-    top: -6px;
+    top: -9px;
     text-indent: -9999px;
     width: 84px;
 }
 
 header .navBar {
+    background-color: beige;
+    width: 100%;
+    height: 80px;
     display: inline-flex;
-}
-
-header .hero {
-    display: grid;
     margin: 0;
     padding: 0;
 }
 
+header .hero {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+}
+
 header .heroHeading {
+    margin: 10px;
     text-align: center;
-    justify-self: center;
 }
 
 header .subHeading {
+    margin: 10px;
     width: 500px;
     text-align: center;
-    justify-self: center;
 }
 
 header figure {
@@ -67,18 +78,37 @@ header .heroImage img {
     justify-self: center;
 }
 
-section {
+/* RESPONSIVE RULES */
+@media screen and (max-width: 600px) {
+    header {
+        height: 394px;
+    }
+    .button {
+        display: none;
+    }
+    header .subHeading {
+        width: 378px;
+        text-align: center;
+    }
+
+    header .heroImage img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+
+.testimonial {
     background-color: burlywood;
-    padding: 20px;
     display: flex;
-
-
+    flex-wrap: wrap;
+    padding: 60px;
+    display: flex;
 }
-section div {
-    background-color: blue;
+.testimonial p {
     width: 100px;
-    margin: auto;
 }
+
 
 ul {
     margin: 0px;
@@ -96,3 +126,4 @@ footer {
     background-color: black;
     padding: 20px;
 }
+
