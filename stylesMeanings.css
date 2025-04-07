@@ -59,6 +59,11 @@ header .navBar {
     padding: 0;
 }
 
+section .divPortfolioList {
+    display:flex;
+    flex-wrap: wrap;
+}
+
 section h1 {
     margin: 40px;
     justify-self: center;
@@ -96,8 +101,17 @@ section p {
     grid-column: 2/3;
     width: 85%;
     position: relative;
-    left: 10%;
+    left: 7%;
 }
+
+@media screen and (max-width: 2000px) {
+    section .divPortfolioList {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 /* RESPONSIVE RULES */
 @media screen and (max-width: 600px) {
     header {
