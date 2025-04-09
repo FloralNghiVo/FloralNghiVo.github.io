@@ -2,6 +2,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    background-color: #fff8f9;
 }
 
 ul {
@@ -23,19 +24,19 @@ header {
     background-color: black;
     height: auto;
     padding: 20px;
+    background-color: #fff8f9;
 }
 
 header a {
-    background-color: red;
-    color: white;
+    background-color: #f8f3e6;
+    color: #2b3e0b;
     display: inline-block;
     margin: 20px 10px;
     padding: 10px;
     text-decoration: none;
 }
-
 header a:hover {
-    background-color: aliceblue;
+    background-color: #f8f3e6;
     color: black;
 }
 
@@ -52,15 +53,24 @@ header .logo a {
 }
 
 header .navBar {
-    background-color: beige;
+    background-color: #b7c4a1;
     width: 99%;
     height: 80px;
     display: inline-flex;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    border: 1px solid black;
 }
 
 /* MEANINGS PORTFOLIO lIST */
+
+section {
+    background-color: #fff8f9;
+}
 
 section .divPortfolioList {
     display: flex;
@@ -68,10 +78,14 @@ section .divPortfolioList {
 }
 
 section h1 {
-    margin: 40px;
+    margin: 20px;
     justify-self: center;
     text-align: center;
     align-self: center;
+    font-family: 'Playfair Display SC' ;
+    font-size: 40px;
+    color: #2b3e0b;
+    background-color: #fff8f9;
 }
 
 section .portfolioList {
@@ -96,7 +110,8 @@ section h4 {
     grid-column: 1/2;
     position: relative;
     left: 10%;
-
+    font-family: 'Poppins';
+    font-weight: bold;
 }
 
 section p {
@@ -105,6 +120,8 @@ section p {
     width: 85%;
     position: relative;
     left: 7%;
+    font-family: 'Lora';
+    color: #19130e;
 }
 
 
@@ -133,6 +150,15 @@ section p {
         width: 100%;
     }
 
+    header .navBar {
+        justify-content: flex-start;
+    }
+
+    section h1 {
+        font-size: 25px;
+        margin: 20px;
+    }
+
     section h4,
     section img,
     section p {
@@ -155,10 +181,12 @@ section p {
 /* MEANINGS FOOTER */
 
 footer {
-    background-color: black;
+    background-color: #b7c4a1;
     padding: 20px;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
 }
 
 footer .info {
@@ -172,7 +200,7 @@ footer .link {
 }
 
 footer a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 

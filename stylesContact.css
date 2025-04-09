@@ -17,22 +17,21 @@ li {
 
 /* HEADER */
 header {
-    background-color: black;
+    background-color: #fff8f9;
     height: auto;
     padding: 20px;
 }
 
 header a {
-    background-color: red;
-    color: white;
+    background-color: #f8f3e6;
+    color: #2b3e0b;
     display: inline-block;
     margin: 20px 10px;
     padding: 10px;
     text-decoration: none;
 }
-
 header a:hover {
-    background-color: aliceblue;
+    background-color: #f8f3e6;
     color: black;
 }
 
@@ -49,12 +48,17 @@ header .logo a {
 }
 
 header .navBar {
-    background-color: beige;
+    background-color: #b7c4a1;
     width: 99%;
     height: 80px;
     display: inline-flex;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    border: 1px solid black;
 }
 
 /* RESPONSIVE RULES */
@@ -74,21 +78,28 @@ header .navBar {
         width: 400px;
         height: auto;
     }
+
+    header .navBar {
+        justify-content: flex-start;
+    }
 }
+
 
 
 /* FORM SECTION */
 section {
+    background-color: #fff8f9;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 700px;
+    min-height: 900px;
     justify-content: flex-start;
 }
 
 .input-box {
     justify-self: center;
+    font-family: 'Poppins';
 }
 
 .inputfield {
@@ -104,6 +115,7 @@ section {
     background: transparent;
     border: 1px solid black;
     border-radius: 3px;
+    font-family: 'Poppins';
 }
 
 .send {
@@ -112,7 +124,7 @@ section {
 
 form button {
     padding: 12px 32px;
-    color: black;
+    color: #2b3e0b;
     background: transparent;
     border: black;
     outline: black;
@@ -123,18 +135,50 @@ form button {
     font-weight: 600;
     cursor: pointer;
     margin-top: 20px;
+    font-family: 'Poppins';
 }
 .left-h1 {
     display: flex;
     justify-content: flex-end;
+    margin: 60px;
+    font-family: 'Playfair Display SC' ;
+    color: #2b3e0b;
+}
+
+.right-h1 {
+    margin: 60px;
+    font-family: 'Playfair Display SC' ;
+    color: #2b3e0b;
+}
+
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 600px) {
+    section {
+        min-height: 700px;
+    }
+    .left-h1 {
+        margin: 20px 0px;
+    }
+
+    .right-h1 {
+        margin: 20px 0px;
+    }
+
+    .item {
+        width: 300px;
+    }
 }
 /* MEANINGS FOOTER */
 
 footer {
-    background-color: black;
+    background-color: #b7c4a1;
     padding: 20px;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+
 }
 
 footer .info {
@@ -148,7 +192,7 @@ footer .link {
 }
 
 footer a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
