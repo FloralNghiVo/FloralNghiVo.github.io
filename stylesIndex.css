@@ -100,7 +100,7 @@ header .heroImage img {
 /* RESPONSIVE RULES */
 @media screen and (max-width: 600px) {
     header {
-        height: 540px;
+        height: 520px;
     }
     .button {
         display: none;
@@ -191,7 +191,6 @@ header .heroImage img {
 /* RESPONSIVE RULES */
 @media screen and (max-width: 600px) {
     .testimonial {
-        background-color: rgb(222, 135, 135);
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto;
