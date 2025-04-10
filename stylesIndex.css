@@ -100,10 +100,14 @@ header .heroImage img {
 /* RESPONSIVE RULES */
 @media screen and (max-width: 600px) {
     header {
-        height: 520px;
+        height: 380px;
+        justify-content: center;
     }
     .button {
         display: none;
+    }
+    header .heroHeading {
+        font-size: 25px;
     }
     header .subHeading {
         width: 378px;
@@ -111,7 +115,7 @@ header .heroImage img {
     }
 
     header .heroImage img {
-        width: 400px;
+        width: 370px;
         height: auto;
     }
 
