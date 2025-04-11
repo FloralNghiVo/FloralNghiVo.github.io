@@ -14,6 +14,15 @@ li {
     display: inline-block;
 }
 
+img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+img:hover {
+    opacity: 0.7;
+}
 
 /* HEADER */
 header {
@@ -30,6 +39,7 @@ header a {
     padding: 10px;
     text-decoration: none;
 }
+
 header a:hover {
     background-color: #f8f3e6;
     color: black;
@@ -61,14 +71,105 @@ header .navBar {
     border: 1px solid black;
 }
 
+.hamburger {
+    position: relative;
+    display: block;
+    width: 40px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #f8f3e6;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-10px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: #fff8f9;
+    margin-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #b7c4a1;
+    color: #2b3e0b;
+    text-decoration: none;
+}
+
+.mobile-nav a:hover {
+    background-color: #2b3e0b;
+    color: white;
+}
+
+section.is-active,
+footer.is-active,
+.hero.is-active,
+.heroImage.is-active {
+    display: none;
+}
+
+
+/* RESPONSIVE RULES */
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
 /* RESPONSIVE RULES */
 @media screen and (max-width: 600px) {
     header {
-        height: 70px;
+        height: 80px;
     }
+
     .button {
         display: none;
     }
+
     header .subHeading {
         width: 378px;
         text-align: center;
@@ -80,8 +181,9 @@ header .navBar {
     }
 
     header .navBar {
-        justify-content: flex-start;
+        justify-content: space-between;
     }
+
 }
 
 
@@ -137,17 +239,18 @@ form button {
     margin-top: 20px;
     font-family: 'Poppins';
 }
+
 .left-h1 {
     display: flex;
     justify-content: flex-end;
     margin: 60px;
-    font-family: 'Playfair Display SC' ;
+    font-family: 'Playfair Display SC';
     color: #2b3e0b;
 }
 
 .right-h1 {
     margin: 60px;
-    font-family: 'Playfair Display SC' ;
+    font-family: 'Playfair Display SC';
     color: #2b3e0b;
 }
 
@@ -157,18 +260,20 @@ form button {
     section {
         min-height: 700px;
     }
+
     .left-h1 {
-        margin: 20px 0px;
+        margin: 20px;
     }
 
     .right-h1 {
-        margin: 20px 0px;
+        margin: 20px;
     }
 
     .item {
         width: 300px;
     }
 }
+
 /* MEANINGS FOOTER */
 
 footer {
@@ -178,7 +283,7 @@ footer {
     justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
     color: black;
-
+    font-weight: bold;
 }
 
 footer .info {
