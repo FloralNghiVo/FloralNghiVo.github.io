@@ -180,7 +180,7 @@ header .heroVideo video {
 section.is-active,
 footer.is-active,
 .hero.is-active,
-.heroImage.is-active {
+.heroVideo.is-active {
     display: none;
 }
 

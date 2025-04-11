@@ -4,7 +4,7 @@
 	const section = document.querySelector('section');
 	const footer = document.querySelector('footer');
 	const hero = document.querySelector('.hero');
-	const heroImage = document.querySelector('.heroImage');
+	const heroVideo = document.querySelector('.heroVideo');
 
 	menu_btn.addEventListener('click', function () {
 		menu_btn.classList.toggle('is-active');
@@ -12,6 +12,6 @@
         section.classList.toggle('is-active');
         footer.classList.toggle('is-active');
         hero.classList.toggle('is-active');
-        heroImage.classList.toggle('is-active');
+        heroVideo.classList.toggle('is-active');
 
 	});
