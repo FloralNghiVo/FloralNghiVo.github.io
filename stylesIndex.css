@@ -14,7 +14,7 @@ li {
     display: inline-block;
 }
 
-img {
+img, video {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -102,7 +102,7 @@ header figure {
     padding: 0;
 }
 
-header .heroImage img {
+header .heroVideo video {
     height: 363px;
     width: auto;
     justify-self: center;
@@ -199,7 +199,7 @@ footer.is-active,
 
 @media screen and (max-width: 600px) {
     header {
-        height: 365px;
+        height: 416px;
         justify-content: center;
     }
 
@@ -216,7 +216,7 @@ footer.is-active,
         text-align: center;
     }
 
-    header .heroImage img {
+    header .heroVideo video {
         width: 370px;
         height: auto;
     }
