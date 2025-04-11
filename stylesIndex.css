@@ -199,7 +199,7 @@ footer.is-active,
 
 @media screen and (max-width: 600px) {
     header {
-        height: 416px;
+        height: 450px;
         justify-content: center;
     }
 
@@ -212,13 +212,21 @@ footer.is-active,
     }
 
     header .subHeading {
-        width: 378px;
+        display: flex;
+        width: 100%;
         text-align: center;
     }
 
+    header .heroVideo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
     header .heroVideo video {
-        width: 370px;
+        width: 100%;
         height: auto;
+        margin: 10px;
     }
 
     header .navBar {
