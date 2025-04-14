@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff8f9;
+    text-align: justify;
 }
 
 ul {
@@ -156,7 +157,7 @@ footer.is-active,
 
 /* RESPONSIVE RULES */
 
-@media (min-width: 768px) {
+@media (min-width: 958px) {
     .mobile-nav {
         display: none;
     }
@@ -236,7 +237,7 @@ section p {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 958px) {
     header {
         height: 80px;
     }

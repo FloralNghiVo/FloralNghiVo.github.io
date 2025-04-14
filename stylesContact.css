@@ -2,6 +2,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+
 }
 
 ul {
@@ -161,7 +162,7 @@ footer.is-active,
 }
 
 /* RESPONSIVE RULES */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     header {
         height: 80px;
     }

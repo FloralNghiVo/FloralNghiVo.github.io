@@ -2,6 +2,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    text-align: justify;
 }
 
 ul {
@@ -187,7 +188,7 @@ footer.is-active,
 
 /* RESPONSIVE RULES */
 
-@media (min-width: 768px) {
+@media (min-width: 1114px) {
     .mobile-nav {
         display: none;
     }
@@ -197,9 +198,9 @@ footer.is-active,
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1114px) {
     header {
-        height: 450px;
+        height: 455px;
         justify-content: center;
     }
 
