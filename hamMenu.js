@@ -15,3 +15,9 @@
         heroVideo.classList.toggle('is-active');
 
 	});
+
+
+	// Send function
+	function send() {
+		alert("Thank you for your message!");
+	}
