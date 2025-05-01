@@ -189,6 +189,10 @@ footer.is-active,
     .hamburger {
         display: none;
     }
+
+    button {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1114px) {
