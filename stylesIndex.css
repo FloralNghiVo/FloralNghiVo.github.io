@@ -93,6 +93,7 @@ header .subHeading {
     margin: 10px;
     width: 500px;
     text-align: center;
+    font-weight: bold;
     font-family: 'Lora';
     color: #19130e;
 }
@@ -229,7 +230,7 @@ footer.is-active,
 
     header .subHeading {
         display: flex;
-        width: 100%;
+        width: 90%;
         justify-content: space-around;
     }
 
@@ -246,7 +247,7 @@ footer.is-active,
 
 /* ABOUT US TESTIMONIAL SECTION */
 
-.container {
+.testimonialContainer {
     display: grid;
     justify-items: center;
     background-color: #f8f3e6;
