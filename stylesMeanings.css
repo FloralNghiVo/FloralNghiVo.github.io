@@ -289,6 +289,11 @@ section a:hover {
         width: 100%;
     }
 
+    section a {
+        left: 4%;
+        top: 1%;
+    }
+
     section p,
     section h4 {
         width: 90%;
