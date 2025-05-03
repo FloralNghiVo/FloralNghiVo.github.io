@@ -399,6 +399,9 @@ footer.is-active,
         grid-row: 4/5;
     }
 
+    footer {
+        text-align: left;
+    }
 
 }
 

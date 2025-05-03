@@ -2,7 +2,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-
+    width: auto;
 }
 
 ul {
@@ -263,6 +263,7 @@ form button {
         min-height: 700px;
     }
 
+
     .left-h1 {
         margin: 20px;
     }
@@ -272,11 +273,11 @@ form button {
     }
 
     .item {
-        width: 300px;
+        width: 200px;
     }
 }
 
-/* MEANINGS FOOTER */
+/* FOOTER */
 
 footer {
     background-color: #b7c4a1;
